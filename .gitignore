@@ -1,6 +1,9 @@
 # OS
 .DS_Store
 
+# Generated release output
+dist/
+
 # Personal coaching data — contains stories, scores, interview targets, and concerns
 coaching_state.md
 next-steps.md
