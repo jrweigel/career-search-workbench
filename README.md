@@ -269,7 +269,6 @@ Do not package a populated `coaching_state.md`. Let `kickoff` create state, or p
 career-search-workbench/
 ├── SKILL.md
 ├── README.md
-├── README.proposed.md
 ├── SETUP.md
 ├── CONTRIBUTING.md
 ├── LICENSE
