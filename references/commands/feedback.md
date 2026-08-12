@@ -51,6 +51,15 @@ Classify the candidate's input into one of five types. If ambiguous, ask: "Is th
 - Update Interview Loops → relevant company entry (Status, Rounds completed)
 - Update Interview Intelligence → Question Bank Outcome column for all questions from this company/round
 - If advanced with next-round details, update Interview Loops → Next round
+- Prep brief lifecycle rule:
+   - if outcome is `rejected`, `withdrawn`, or an accepted `offer` that closes the loop, move matching prep briefs from `applications/prep-briefs/active/` to `applications/prep-briefs/archive/`
+   - match files by company and role naming pattern: `YYYY-MM-DD-[company]-[role]-prep-brief.md`
+   - if no matching active brief exists, note "no prep brief to archive" and continue
+- Write learnings artifacts:
+   - rejection -> `applications/learnings/rejections/` using `templates/rejection-note-template.md`
+   - advanced or offer -> `applications/learnings/wins/` using `templates/win-note-template.md`
+   - filename pattern: `YYYY-MM-DD-[company]-[role]-[round].md`
+- If `applications/tracker.md` exists, update the matching company row with the new stage, next action, and due date when provided.
 
 **Output**: Brief confirmation of the update. If outcome data now meets the threshold for outcome-score correlation (3+ real interviews), mention it: "You now have enough real interview data for `progress` to show outcome patterns. Worth running when you're ready."
 

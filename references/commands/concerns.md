@@ -6,6 +6,7 @@
 2. Validate correct concerns.
 3. **Generate concerns from real data** — don't work in a vacuum. Pull from:
    - Resume analysis (career gaps, short tenures, domain switches, seniority mismatches — from kickoff)
+   - Competency model output (company-specific overlay or general fallback from `references/interview-competencies.md`)
    - Storybank gaps (competencies with no strong story)
    - Previous analyze results (patterns and weak dimensions)
    - The specific role/company (does the JD require something the candidate lacks?)

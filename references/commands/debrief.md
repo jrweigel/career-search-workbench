@@ -119,3 +119,13 @@ Update `coaching_state.md` per the State Update Triggers in SKILL.md:
 - Interview Loop updates: round completed, stories used, signals noted
 - Outcome Log: add entry with Result: pending
 - Interview Intelligence updates: recalled questions to Question Bank (marked "recall-only"), recruiter/interviewer feedback to Recruiter/Interviewer Feedback table, Company Patterns if new observations emerged
+
+### Artifact Writes
+
+Also write an event note to `applications/learnings/interview-notes/` using `templates/interview-note-template.md`.
+
+Recommended filename pattern:
+
+`YYYY-MM-DD-[company]-[role]-[round].md`
+
+If `applications/tracker.md` exists, update the relevant row's `Last Update`, `Notes`, and `Next Action` fields when the candidate confirms what happens next.

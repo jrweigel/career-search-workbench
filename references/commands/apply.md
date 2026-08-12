@@ -38,7 +38,20 @@ This builds a reusable answer library across applications over time.
 
 For each question, verify that the storybank (in `coaching_state.md`) or the provided resume contains evidence to support an answer.
 
+Use `references/evidence-mine.md` as the governing protocol. Check for:
+- candidate ownership statement
+- baseline and endpoint metrics when applicable
+- timeframe and scope
+- credibility source
+
+Rate the available support using the existing evidence strength language:
+- **Strong**: quantified result with clear ownership and timeframe
+- **Medium**: clear ownership and impact with partial metrics
+- **Weak**: qualitative claim without specific proof
+
 **If evidence is found**: proceed to Step 4.
+
+**If evidence is weak**: do not silently draft at full confidence. Surface the gap first: "I found a usable example, but the proof is thin on [metric / ownership / timeframe]. Want to strengthen it before I draft, or should I use it with a lighter claim?"
 
 **If evidence is not found** (e.g., a tool never used, a domain never worked in, an experience not in the storybank or resume):
 - Do not invent or imply the experience.
@@ -107,6 +120,28 @@ Flag any questions where evidence was missing and the candidate needs to provide
 
 ---
 
+**Step 6.1: Leadership Messaging Scorecard**
+
+Before finalizing, score the draft set against the Leadership Messaging Baseline in `references/personal-brand-canon.md`.
+
+Also run a truth and evidence gate before final output:
+- if the answer implies ownership the source material does not support, rewrite
+- if the answer uses a metric with no identifiable source, remove or soften it
+- if the answer depends on weak evidence, mark it as a follow-up item instead of presenting it as settled fact
+
+Use these six dimensions:
+
+- Objective clarity and role alignment
+- Results orientation and business impact
+- Concision and skim readability
+- Action ownership and specificity
+- Quantification and evidence quality
+- Truth and credibility standard
+
+If any dimension is 3 or lower, revise the affected answers before returning final output.
+
+---
+
 **Step 7: Save**
 
 Save to `job-search/[company]_application.md` with:
@@ -132,6 +167,17 @@ Story used: [Story title] (for Behavioral/Process only)
 ## Q2 — [Question] [Type]
 [Answer]
 
+## Leadership Messaging Scorecard
+| Dimension | Score (1-5) | Evidence |
+|---|---|---|
+| Objective clarity and role alignment | | |
+| Results orientation and business impact | | |
+| Concision and skim readability | | |
+| Action ownership and specificity | | |
+| Quantification and evidence quality | | |
+| Truth and credibility standard | | |
+- Revision trigger: any score of 3 or lower requires rewrite before finalizing.
+
 ## Flagged Gaps
 - Q[N]: [What's missing — what the candidate needs to provide before this answer can be drafted]
 ```
@@ -141,6 +187,7 @@ Story used: [Story title] (for Behavioral/Process only)
 ### Notes
 
 - Never fabricate an experience. If the storybank and resume don't support an answer, flag it and ask.
+- Prefer strong evidence first, medium evidence when necessary, and weak evidence only as a visible placeholder pending follow-up.
 - For "why us" questions: don't generate a generic answer. Either pull from `prep`/`research` output in `coaching_state.md`, or ask the candidate directly before drafting.
 - Written answers read differently than spoken answers. Avoid narrative warmup ("So, this was a project where..."). Start at the situation or the insight.
 - Proprietary tools (Aha, Productboard, Salesforce, niche platforms) may not be in the storybank. Check the provided resume explicitly before claiming familiarity.

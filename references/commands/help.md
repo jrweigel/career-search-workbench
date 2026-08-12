@@ -8,6 +8,8 @@ When the user types `help`, generate a context-aware command guide — not just 
 2. **Show the full command guide** (see Output Schema below) with sub-commands and key features for each command.
 3. **Highlight the 2-3 most relevant commands right now** based on coaching state:
    - If no coaching state exists: highlight `kickoff`
+   - If tracker exists and has overdue next actions: highlight `status`
+   - If tracker exists but no recent updates in the last 7 days: highlight `status`
    - If storybank is empty: highlight `stories`
    - If storybank has 5+ stories but no narrative identity analysis: highlight `stories` (mention option 7)
    - If an interview is scheduled within 48 hours: highlight `hype` and `prep`
@@ -19,10 +21,13 @@ When the user types `help`, generate a context-aware command guide — not just 
    - If LinkedIn Analysis exists and overall is "Weak" or "Needs Work": highlight `linkedin` (mention pending fixes)
    - If Resume Optimization doesn't exist and kickoff has been run: highlight `resume`
    - If Resume Optimization exists and overall is "Weak" or "Needs Work": highlight `resume` (mention pending fixes)
+   - If a JD was pasted and no JD-to-resume map exists for that role: highlight `map-jd`
+   - If resume or LinkedIn was recently updated and consistency wasn't rechecked: highlight `check-consistency`
    - If Positioning Statement doesn't exist and storybank has 3+ stories: highlight `pitch`
    - If Positioning Statement exists and consistency status shows gaps: highlight `pitch` (mention updating)
    - If Outreach Strategy doesn't exist and kickoff has been run and LinkedIn Analysis is not "Weak": highlight `outreach`
    - If candidate mentions recruiter message, cold outreach, networking, or informational interview: highlight `outreach`
+   - If candidate asks who to contact, where they have warm paths, or how to prioritize networking targets: highlight `network`
    - If the candidate mentions recruiter feedback or an outcome in conversation but hasn't used `feedback`: highlight `feedback`
    - If a JD was mentioned or pasted but no JD Analysis exists and prep hasn't been run: highlight `decode`
    - If the candidate mentions comparing job postings or deciding which roles to apply to: highlight `decode` (batch triage)
@@ -32,12 +37,16 @@ When the user types `help`, generate a context-aware command guide — not just 
    - If the candidate mentions salary expectations, compensation questions, or "what should I say about pay": highlight `salary`
 4. **Diagnostic Router** — If the candidate describes a problem instead of asking for a command, route them to the right place:
    - "I'm not getting callbacks" → `resume` (ATS issues) or `decode` (targeting wrong roles)
+   - "I have a JD but don't know what to change on my resume" → `map-jd`
+   - "My resume, LinkedIn, and pitch feel inconsistent" → `check-consistency`
    - "I keep failing first rounds" → `analyze` (if transcripts exist) or `practice ladder` (if no data)
    - "I freeze in interviews" → `practice ladder` (build reps) + `hype` (pre-interview boost)
    - "I don't know what to say about salary" → `salary`
    - "I have an offer but it feels low" → `negotiate`
    - "I don't know where to start" → `kickoff`
    - "I'm not hearing back from networking" → `outreach` + `linkedin` (profile quality gate)
+   - "I do not know where my pipeline stands" / "what should I do next" → `status`
+   - "Who should I reach out to first" / "do I have warm paths" → `network` + `outreach`
    - "I keep getting to final rounds but not getting offers" → `progress` (pattern analysis) + `concerns` (what's tripping you up)
    - "I have a presentation round" → `present`
    Don't just list the command — explain WHY that command addresses their specific problem.
@@ -53,6 +62,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 | Command | What It Does |
 |---|---|
 | `kickoff` | Set up your profile, choose a track (Quick Prep or Full System), and get a prioritized action plan based on your timeline |
+| `status` | Quick control-tower view of your tracker, learnings freshness, overdue actions, and highest-leverage next step |
 
 ### Interview Round Prep
 | Command | What It Does |
@@ -69,8 +79,11 @@ When the user types `help`, generate a context-aware command guide — not just 
 |---|---|
 | `linkedin` | LinkedIn profile optimization — section-by-section audit, recruiter search optimization, content strategy. Three depth levels: Quick Audit, Standard, Deep Optimization. At Level 5 Deep: Challenge Protocol applied to your profile. |
 | `resume` | Resume optimization — ATS compatibility, recruiter scan, bullet quality, seniority calibration, keyword coverage, structure, concern management, consistency. Three depth levels: Quick Audit, Standard, Deep Optimization. Storybank-to-bullet pipeline when storybank exists. JD-targeted optimization when JD available. At Level 5 Deep: Challenge Protocol applied to your resume. |
+| `map-jd` | JD-to-resume alignment map — extracts high-priority JD signals, maps them to your current resume coverage, and produces an evidence-gated rewrite queue without fabrication. Best used before applying to a specific role. |
+| `check-consistency` | Cross-surface consistency audit — compares resume, LinkedIn, pitch, and coaching-state narrative to catch contradictions, timeline drift, and messaging mismatch before recruiter review. |
 | `pitch` | Core positioning statement — your "who I am" in 10-90 seconds. Foundational artifact with context variants (interview TMAY, networking, recruiter call, career fair, LinkedIn hook). Three depth levels: Quick Draft, Standard, Deep Positioning. Saved to coaching state and referenced by resume, linkedin, and outreach for consistency. At Level 5 Deep: Challenge Protocol. |
 | `outreach` | Networking outreach coaching — cold LinkedIn, warm intros, informational interview asks, recruiter replies, follow-ups, referral requests. Three depth levels: Quick (templates), Standard (critique + rewrite), Deep (full campaign strategy). Consumes Positioning Statement from `pitch`. At Level 5 Deep: Challenge Protocol. |
+| `network` | Networking intelligence mapping — warm path inventory, relationship stage tracking, prioritized contact pipeline, and follow-up sequencing. Designed to tell you who to contact first and why. |
 
 ### Pre-Conversation
 | Command | What It Does |
@@ -98,6 +111,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Progress and Tracking
 | Command | What It Does |
 |---|---|
+| `status` | Operational snapshot of pipeline health — stage counts, overdue next actions, stale learnings synthesis, and one recommended move now |
 | `progress` | Score trends, self-assessment calibration (are you an over-rater or under-rater?), storybank health, outcome tracking (correlates practice scores with real interview results), targeting insights (correlates rejection patterns with company type and fit assessments), question-type performance analysis, accumulated patterns from real interviews, and coaching meta-check |
 
 ### Post-Interview
@@ -136,9 +150,15 @@ When the user types `help`, generate a context-aware command guide — not just 
 - The coach will recommend a specific next step after every command — just follow the flow if you're not sure what to do next
 - Your LinkedIn profile is a search engine, not a resume. Run `linkedin` to optimize for how recruiters actually find candidates.
 - Your resume is ranked by ATS before a human ever sees it. Run `resume` to optimize for both machines and the 7-second recruiter scan.
+- When you have a specific posting, run `map-jd` before editing your resume to focus on the highest-impact role signals first.
 - Your pitch is the consistency anchor for everything else. Run `pitch` before `resume` or `linkedin` — it gives both commands a positioning reference to align to.
+- After changing resume or LinkedIn, run `check-consistency` to catch contradictions before recruiters do.
 - Referrals account for 30-50% of hires. Run `outreach` to craft messages that actually get responses — not generic templates.
 - Don't apply to every JD that looks interesting. Run `decode` to analyze the language, assess fit, and decide where your time is best spent — or compare multiple JDs with batch triage.
+- For new JDs, `prep` follows a standard brief schema in `references/prep-brief-template.md` so outputs stay consistent and reusable.
+- Competency mapping uses a dual model: company-specific overlays where available, with `references/interview-competencies.md` as the general fallback.
+- Keep your narrative coherent across `pitch`, `resume`, `linkedin`, and `outreach` by grounding outputs in `references/personal-brand-canon.md`.
+- Strengthen credibility with measurable proof by using `references/evidence-mine.md` when stories or bullets feel thin.
 - Presentation rounds are won in the preparation, not the delivery. Run `present` to structure your content, calibrate timing, and prepare for Q&A before you ever open PowerPoint.
 - The highest-leverage salary moment is the recruiter screen, not the offer negotiation. Run `salary` before that first call so you don't anchor yourself low.
 - Everything saves automatically to `coaching_state.md` — pick up where you left off, even weeks later

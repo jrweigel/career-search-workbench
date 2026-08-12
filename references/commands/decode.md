@@ -99,6 +99,8 @@ For Lens 5 (between-the-lines signals), use the "decode + verify" pattern:
 For Lens 6 (what's missing), explicitly state what the absence might mean AND what it might not mean. Absence is ambiguous — don't present a single interpretation as truth.
 
 **Step 4: Competency Extraction**
+Use `references/interview-competencies.md` as the default model. If the active company has a company-specific competency overlay, use it first and map to the general model.
+
 Extract top 5-7 competencies in priority order. For each:
 - The competency (specific, not vague)
 - Source section(s) (where in the JD it appears)
@@ -132,10 +134,26 @@ For each JD: run Steps 1-6 individually (can be abbreviated for Quick Scan depth
 
 Then produce comparative analysis:
 - **Rank by fit** (highest fit first, with evidence for each)
+- **Role-selection scorecard** that forces an allocation decision, not just a ranking
 - **Overlapping competencies** across JDs — this reveals the candidate's market-validated sweet spot
 - **Divergent requirements** — where JDs pull in different directions, signaling scope decisions the candidate needs to make
 - **Allocation recommendation**: which to pursue first, which to skip, which to research more. Honest about skips — "This one is a Long-Shot Stretch because [specific reason]. Unless you have an inside connection, your time is better spent on the others."
 - **Target profile synthesis** — what these JDs collectively reveal about what the market wants from someone like the candidate
+
+### Role-Selection Scorecard
+
+When 2 or more JDs are in play, summarize each role with the same decision fields before giving the final recommendation.
+
+| Field | Meaning |
+|---|---|
+| Requirement coverage | How much of the screening bar is already present |
+| Seniority alignment | Whether the scope matches the candidate's current band |
+| Competency overlap | Which top competencies match most directly |
+| Trajectory coherence | Whether this role makes sense as the next move |
+| Structural risk | The main reason this role could still fail |
+| Allocation call | Pursue now / pursue later / research more / skip |
+
+Use the scorecard to explain time allocation directly. The goal is not just "best fit." The goal is "best use of finite application and prep time."
 
 ### Teaching Layer
 
@@ -278,11 +296,16 @@ Based on top competencies and identified gaps:
 ## Batch Triage: [N] Roles
 
 ## Ranking
-| Rank | Company | Role | Fit | Strongest Match | Biggest Gap | Recommendation |
-|---|---|---|---|---|---|---|
-| 1 | ... | ... | Strong | [competency] | [gap or none] | Pursue |
-| 2 | ... | ... | Investable Stretch | [competency] | [gap] | Pursue with positioning |
-| 3 | ... | ... | Long-Shot Stretch | [competency] | [gap] | Skip unless referral |
+| Rank | Company | Role | Fit | Requirement Coverage | Seniority Alignment | Strongest Match | Biggest Gap | Allocation Call |
+|---|---|---|---|---|---|---|---|---|
+| 1 | ... | ... | Strong | High | Strong | [competency] | [gap or none] | Pursue now |
+| 2 | ... | ... | Investable Stretch | Medium | Moderate | [competency] | [gap] | Pursue later |
+| 3 | ... | ... | Long-Shot Stretch | Low | Weak | [competency] | [gap] | Skip unless referral |
+
+## Role-Selection Scorecard
+| Company | Role | Trajectory Coherence | Structural Risk | Best Next Move |
+|---|---|---|---|---|
+| ... | ... | Strong | [risk] | `prep [company]` |
 
 ## Your Sweet Spot
 [Competencies that appear across multiple JDs — this is what the market values in you. Ordered by frequency across JDs.]
@@ -316,4 +339,5 @@ Save to coaching_state.md (one entry per JD — multiple can exist):
 - Structural gaps: [list]
 - Unverified assumptions: [count of LOW/UNKNOWN confidence items]
 - Batch triage rank: [if part of batch — rank/total]
+- Allocation call: [pursue now / pursue later / research more / skip]
 ```

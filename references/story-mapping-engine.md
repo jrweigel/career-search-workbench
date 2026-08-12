@@ -2,6 +2,8 @@
 
 Consolidates story mapping logic into a single protocol. Referenced by `prep` (step 8), `stories` (gap analysis), and `progress` (storybank health).
 
+Use `references/story-library-contract.md` for source hierarchy and when to pull deeper artifacts from `docs/story-library/`.
+
 ---
 
 ## Section 1: Story-Question Fit Scoring

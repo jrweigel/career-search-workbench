@@ -16,7 +16,7 @@
 
 1. Identify interview format (see format taxonomy below). If the identified format is a presentation round, note: `present` provides dedicated content preparation coaching for presentation rounds. After this prep brief, recommend `present` for content structuring if the candidate hasn't already run it.
 2. If interviewer profile links provided, research interviewer profiles and extract intelligence (see Interviewer Intelligence section below). If only names provided, ask for LinkedIn URLs.
-3. **Parse the JD for competencies** (see JD Parsing Guide below). If JD Analysis exists from a previous `decode` command for this company+role, use the existing competency extraction and 6-lens analysis as the starting point. Verify it's still current (JD unchanged), then skip to Step 4. If the JD has changed since decode, re-parse and note changes.
+3. **Parse the JD for competencies** using `references/interview-competencies.md`. If a company-specific competency model exists for the active company, use it first and map back to the general model for consistency. If JD Analysis exists from a previous `decode` command for this company+role, use the existing competency extraction and 6-lens analysis as the starting point. Verify it's still current (JD unchanged), then skip to Step 4. If the JD has changed since decode, re-parse and note changes.
 4. Identify company interviewing culture (see company archetype intelligence below).
 5. Infer top evaluation criteria (adjusted for format + culture).
 6. Map candidate strengths and risks — incorporate interviewer-specific adjustments if intel available.
@@ -31,6 +31,22 @@
    Report the health check as a `Storybank Health` section in the output (see output schema below). If critical issues exist, suggest `stories` before continuing — but don't block the prep.
 8. **Generate likely questions and story mapping.** Use `references/story-mapping-engine.md` for the full portfolio optimization protocol. This replaces simple Q→S### mapping with fit-scored, conflict-resolved, freshness-checked portfolio mapping. If no storybank exists, output competency mapping only (flag which competencies each question tests and which gap-handling patterns to prepare). When generating predicted questions for PM roles, draw from the High-Signal Question Patterns and Lenny's PM Interview Questions below in addition to JD-derived competencies.
 9. Generate non-generic interviewer questions.
+
+### Prep Brief Template Standard
+
+Use `references/prep-brief-template.md` as the default output contract for new JD prep briefs. Keep this as a reference schema only. The command remains `prep`.
+
+### Prep Brief Artifact Storage
+
+When `prep` generates a brief, save it under `applications/prep-briefs/active/` using:
+
+- `[YYYY-MM-DD]_[company]_[role]_prep-brief.md`
+
+Example:
+
+- `applications/prep-briefs/active/2026-07-13_stripe_senior-pm_prep-brief.md`
+
+When an interview loop is closed (rejected, offer accepted, withdrawn, or archived), move related briefs from `applications/prep-briefs/active/` to `applications/prep-briefs/archive/`.
 
 ### High-Signal Question Patterns (for Question Generation)
 

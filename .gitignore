@@ -3,9 +3,28 @@
 
 # Personal coaching data — contains stories, scores, interview targets, and concerns
 coaching_state.md
+next-steps.md
 
 # Personal interview materials (resume, transcripts, company folders)
 materials/
+applications/tracker.md
+applications/prep-briefs/
+applications/learnings/patterns.md
+applications/learnings/interview-notes/*.md
+applications/learnings/rejections/*.md
+applications/learnings/wins/*.md
 
 # Active skill file (created by copying SKILL.md during setup)
 CLAUDE.md
+AGENTS.md
+
+# Personal performance review data
+references/performance-reviews-archive.md
+
+# Personal docs that should not ship in the public package
+docs/ABOUT_ME.md
+docs/EXEC_POSITIONING_RESUME.md
+docs/*resume*.md
+docs/interview-prep-*.md
+docs/linkedin-profile-snapshot-*.md
+docs/performance-reviews-*.md

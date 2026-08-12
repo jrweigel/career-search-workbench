@@ -4,6 +4,25 @@ Optimize the candidate's LinkedIn profile as a search-discoverable, credibility-
 
 Also read `references/differentiation.md` (for earned secret integration into profile) and `references/storybank-guide.md` (for storybank data to feed into About/Experience rewrites).
 
+Also read `references/personal-brand-canon.md` and enforce the Leadership Messaging Baseline in this command.
+
+---
+
+## Leadership Messaging Overlay
+
+Apply this overlay in every depth level.
+
+1. Objective clarity: About section should make current target explicit when in active search mode.
+2. Results portability: reuse high-quality resume bullets and outcome language in Experience.
+3. Concision and skim hooks: strongest claims should appear before "see more" where possible.
+4. Risk reduction: remove ambiguous claims and unclear scope that force the reader to guess.
+5. Action ownership: use direct verbs that show leadership agency.
+6. Evidence over adjectives: avoid generic self-descriptor stacks in About.
+7. STAR-informed writing: concise context plus action plus result in experience entries.
+8. Quantification: include numbers or approximations when confidentiality requires redaction.
+9. Credibility links: prioritize links that validate work and reinforce expertise.
+10. Truth standard: do not imply experiences, scope, or outcomes that cannot be supported.
+
 ---
 
 ## How LinkedIn Actually Works
@@ -154,6 +173,34 @@ Not just the profile — how to use LinkedIn as a platform.
 
 Provide 3 specific post ideas based on their storybank and earned secrets.
 
+### Step 5.1: Content Pillars and Calendar (Standard + Deep)
+
+Build a lightweight, role-aligned publishing plan that can actually be executed.
+
+- Define 3-4 content pillars tied to target-role credibility.
+- Map each pillar to one supporting storybank ID or concrete proof point.
+- Create a rolling 4-week calendar with realistic effort expectations.
+
+Calendar rules:
+
+- If timeline is 2-6 weeks: 1 post/week max.
+- If timeline is 6+ weeks: 2 posts/week is acceptable.
+- Include one low-lift week option for busy interview periods.
+
+Use this weekly shape:
+
+1. Insight post (point of view from direct experience)
+2. Proof post (specific example, metric, or lesson learned)
+3. Optional engagement post (commentary on a relevant industry signal)
+
+### Step 5.2: Skills to Story Alignment (Standard + Deep)
+
+Validate that pinned skills are backed by visible evidence.
+
+- For each top pinned skill, map one story or measurable example.
+- If a pinned skill has no proof, flag it as credibility risk.
+- Recommend skill reorder based on target role and evidence strength.
+
 ### Step 6: Challenge Protocol (Deep Optimization, Level 5 only)
 
 Run Challenge Protocol lenses against the LinkedIn profile:
@@ -174,6 +221,17 @@ Run Challenge Protocol lenses against the LinkedIn profile:
 2. **[Section]**: [What's wrong] → [Specific fix with rewrite]
 3. **[Section]**: [What's wrong] → [Specific fix with rewrite]
 
+## Leadership Messaging Scorecard
+| Dimension | Score (1-5) | Evidence |
+|---|---|---|
+| Objective clarity | | |
+| Results portability from resume | | |
+| Above-fold concision and hook strength | | |
+| Risk reduction and ambiguity control | | |
+| Quantification and proof signals | | |
+| Truth and credibility standard | | |
+- Revision trigger: any score of 3 or lower requires rewrite before finalizing.
+
 ## Quick Wins
 - [1-2 things that take <5 minutes and improve discoverability]
 
@@ -190,6 +248,17 @@ Run Challenge Protocol lenses against the LinkedIn profile:
 - Credibility on visit: [Strong / Moderate / Weak] — [1-line evidence]
 - Differentiation: [Strong / Moderate / Weak] — [1-line evidence]
 - Overall: [Strong / Needs Work / Weak]
+
+## Leadership Messaging Scorecard
+| Dimension | Score (1-5) | Evidence |
+|---|---|---|
+| Objective clarity | | |
+| Results portability from resume | | |
+| Above-fold concision and hook strength | | |
+| Risk reduction and ambiguity control | | |
+| Quantification and proof signals | | |
+| Truth and credibility standard | | |
+- Revision trigger: any score of 3 or lower requires rewrite before finalizing.
 
 ## Section-by-Section
 
@@ -221,6 +290,19 @@ Run Challenge Protocol lenses against the LinkedIn profile:
   2. [specific idea with hook]
   3. [specific idea with hook]
 
+## 4-Week Content Calendar
+| Week | Theme/Pillar | Post Type | Working Hook | Evidence Anchor | Effort |
+|---|---|---|---|---|---|
+| 1 |  | Insight |  | S### or metric | Low/Medium/High |
+| 2 |  | Proof |  | S### or metric | Low/Medium/High |
+| 3 |  | Insight |  | S### or metric | Low/Medium/High |
+| 4 |  | Proof or Engagement |  | S### or metric | Low/Medium/High |
+
+## Skills to Story Alignment
+| Pinned Skill | Evidence Story/Example | Strength of Proof | Action |
+|---|---|---|---|
+|  |  | Strong/Moderate/Weak | keep/reorder/remove |
+
 ## Priority Moves (ordered)
 1. [highest-impact fix — do this first]
 2. [second-highest]
@@ -237,6 +319,9 @@ Run Challenge Protocol lenses against the LinkedIn profile:
 ## Profile Score
 [same as Standard]
 
+## Leadership Messaging Scorecard
+[same as Standard]
+
 ## Section-by-Section
 [same as Standard, but all 9 sections get full treatment — not just headline/about/skills/experience]
 
@@ -249,6 +334,10 @@ Run Challenge Protocol lenses against the LinkedIn profile:
 [same as Standard, but expanded]
 - Engagement targets: [specific people/companies to engage with based on target roles]
 - Content calendar: [week 1-4 suggested cadence]
+- Performance tracking baseline:
+  - Profile views (7-day baseline):
+  - Search appearances:
+  - Average post impressions (if posting already):
 
 ## Challenge (Level 5 only)
 - Assumptions this profile rests on: [2-3]
@@ -282,4 +371,7 @@ After running `linkedin`, save to coaching_state.md:
 - Differentiation: [Strong / Moderate / Weak]
 - Top fixes pending: [1-3 line items]
 - Positioning gaps: [resume ↔ LinkedIn inconsistencies, if assessed]
+- Content pillars: [3-4 short labels]
+- Calendar status: [not started / week 1 active / week 2 active / completed]
+- Performance baseline: [profile views, search appearances, avg impressions]
 ```

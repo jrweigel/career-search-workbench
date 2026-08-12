@@ -4,6 +4,25 @@ Optimize the candidate's resume across every dimension that actually affects whe
 
 Also read `references/differentiation.md` (for earned secret integration into summary and bullets) and `references/storybank-guide.md` (for storybank data to feed into bullet rewrites and quantification).
 
+Also read `references/personal-brand-canon.md` and enforce the Leadership Messaging Baseline in this command.
+
+---
+
+## Leadership Messaging Overlay
+
+Apply this overlay in every depth level.
+
+1. Objective clarity: summary must make target role and scope explicit.
+2. Results over duties: bullets should emphasize outcomes, not task lists.
+3. Concision: remove filler language and compress for skim speed.
+4. Risk reduction: remove ambiguity around scope, authorization, location, and continuity when relevant.
+5. Action ownership: prioritize verbs that show what the candidate drove.
+6. Evidence over adjectives: replace self-praise strings with specific proof.
+7. STAR compression: each key bullet should imply context, action, and result.
+8. Specificity and numbers: quantify impact with direct metrics or credible proxies.
+9. Plain external language: translate internal acronyms and code names.
+10. Truth standard: never overstate, fabricate, or imply unsupported experience.
+
 ---
 
 ## How Resumes Actually Work
@@ -215,6 +234,17 @@ Run Challenge Protocol lenses against the resume:
 2. **[Dimension]**: [What's wrong] → [Specific fix with rewrite if applicable]
 3. **[Dimension]**: [What's wrong] → [Specific fix with rewrite if applicable]
 
+## Leadership Messaging Scorecard
+| Dimension | Score (1-5) | Evidence |
+|---|---|---|
+| Objective clarity | | |
+| Results density | | |
+| Concision and scan speed | | |
+| Risk reduction and ambiguity control | | |
+| Quantification and specificity | | |
+| Truth and credibility standard | | |
+- Revision trigger: any score of 3 or lower requires rewrite before finalizing.
+
 ## Quick Wins
 - [1-2 things that take <5 minutes and improve ATS ranking or recruiter scan]
 
@@ -233,6 +263,17 @@ Run Challenge Protocol lenses against the resume:
 - Seniority calibration: [Aligned / Mismatched] — [1-line evidence]
 - Keyword coverage: [Strong / Moderate / Weak] — [1-line evidence]
 - Overall: [Strong / Needs Work / Weak]
+
+## Leadership Messaging Scorecard
+| Dimension | Score (1-5) | Evidence |
+|---|---|---|
+| Objective clarity | | |
+| Results density | | |
+| Concision and scan speed | | |
+| Risk reduction and ambiguity control | | |
+| Quantification and specificity | | |
+| Truth and credibility standard | | |
+- Revision trigger: any score of 3 or lower requires rewrite before finalizing.
 
 ## Section-by-Section
 
@@ -299,6 +340,9 @@ Run Challenge Protocol lenses against the resume:
 ## Resume Deep Optimization: [Name]
 
 ## Resume Score
+[same as Standard]
+
+## Leadership Messaging Scorecard
 [same as Standard]
 
 ## Section-by-Section

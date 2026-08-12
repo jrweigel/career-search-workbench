@@ -84,6 +84,8 @@ At Levels 1-4: Skip. The standard improve diagnostic is sufficient.
 
 See `references/storybank-guide.md` for the full storybank format, column definitions, and skill tags. Every story record must include an Earned Secret field — see `references/differentiation.md` for the extraction protocol.
 
+Use `references/evidence-mine.md` when a story lacks measurable proof, ownership clarity, or credibility depth.
+
 ### Prioritized Gap Analysis
 
 When the candidate selects "Find gaps," don't just list missing competencies — rank them by how much they matter for this candidate's target roles:

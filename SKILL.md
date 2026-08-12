@@ -1,5 +1,5 @@
 ---
-name: interview-coach
+name: interview-coach-skill
 description: High-rigor interview coaching skill for job seekers. Use when someone wants structured prep, transcript analysis, practice drills, storybank management, or performance tracking. Supports quick prep and full-system coaching across PM, Engineering, Design, Data Science, Research, Marketing, and Operations.
 ---
 
@@ -88,6 +88,7 @@ Execute commands immediately when detected. Before executing, **read the referen
 | Command | Purpose |
 |---|---|
 | `kickoff` | Initialize coaching profile |
+| `status` | Pipeline status snapshot from tracker + learnings + coaching state, including tracker integrity checks |
 | `research [company]` | Lightweight company research + fit assessment |
 | `prep [company]` | Company + role prep brief |
 | `analyze` | Transcript analysis and scoring |
@@ -98,10 +99,13 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `concerns` | Generate likely concerns + counters |
 | `questions` | Generate tailored interviewer questions |
 | `linkedin` | LinkedIn profile optimization |
+| `check-consistency` | Cross-surface alignment audit across resume, LinkedIn, pitch, and coaching state |
 | `resume` | Resume optimization |
+| `map-jd` | JD-to-resume alignment map with evidence-gated rewrite queue |
 | `pitch` | Core positioning statement + context variants |
 | `outreach` | Networking outreach coaching |
-| `decode` | JD analysis + batch triage |
+| `network` | Networking intelligence map + persisted follow-up pipeline |
+| `decode` | JD analysis + batch triage + role-selection scorecard |
 | `present` | Presentation round coaching |
 | `salary` | Early/mid-process comp coaching |
 | `hype` | Pre-interview confidence and 3x3 plan |
@@ -110,7 +114,7 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `negotiate` | Post-offer negotiation coaching |
 | `reflect` | Post-search retrospective + archive |
 | `feedback` | Capture recruiter feedback, report outcomes, correct assessments, add context |
-| `apply [company]` | Draft written answers to job application screening questions |
+| `apply [company]` | Draft written answers to job application screening questions with evidence gates |
 | `help` | Show this command list |
 
 ### File Routing
@@ -120,16 +124,22 @@ When executing a command, read the required reference files first:
 - **All commands**: Read `references/commands/[command].md` for that command's workflow, and `references/cross-cutting.md` for shared modules (differentiation, gap-handling, signal-reading, psychological readiness, cultural awareness, cross-command dependencies).
 - **`analyze`**: Also read `references/transcript-processing.md`, `references/transcript-formats.md`, `references/rubrics-detailed.md`, `references/examples.md`, `references/calibration-engine.md`, and `references/differentiation.md` (when Differentiation is the bottleneck).
 - **`practice`**, **`mock`**: Also read `references/role-drills.md`. For `practice role` and other role-specific drills, also read `references/calibration-engine.md` Section 5 (role-drill score mapping). For `mock`, also read `references/calibration-engine.md` (mock produces scores and benefits from calibration guidance).
-- **`prep`**: Also read `references/story-mapping-engine.md` when storybank exists.
+- **`prep`**: Also read `references/prep-brief-template.md`. Also read `references/interview-competencies.md` (use company-specific competency overlays when available, fallback to general model). Also read `references/story-mapping-engine.md` and `references/story-library-contract.md` when storybank exists.
 - **`linkedin`**: Also read `references/differentiation.md`, `references/storybank-guide.md` (when drafting copy).
 - **`resume`**: Also read `references/differentiation.md`, `references/storybank-guide.md` (when drafting bullets or summary).
 - **`pitch`**: Also read `references/differentiation.md`, `references/storybank-guide.md` (when drafting the positioning statement).
 - **`outreach`**: Also read `references/differentiation.md`, `references/storybank-guide.md` (when drafting messages).
-- **`decode`**: Also read `references/cross-cutting.md` Role-Fit Assessment Module (for fit assessment adaptation from JD-only input).
+- **`network`**: Also read `references/storybank-guide.md` (for credibility evidence selection when preparing informational conversations and referral asks).
+- **`decode`**: Also read `references/interview-competencies.md` (use company-specific competency overlays when available, fallback to general model) and `references/cross-cutting.md` Role-Fit Assessment Module (for fit assessment adaptation from JD-only input).
+- **`map-jd`**: Also read `references/commands/resume.md`, `references/commands/decode.md`, `references/evidence-mine.md`, and `references/personal-brand-canon.md`.
+- **`check-consistency`**: Also read `references/commands/resume.md`, `references/commands/linkedin.md`, `references/commands/pitch.md`, and `references/personal-brand-canon.md`.
 - **`present`**: Also read `references/storybank-guide.md`, `references/commands/prep.md` Section "Interview Format Taxonomy".
 - **`salary`**: Also read `references/commands/negotiate.md` (for handoff awareness and consistency).
-- **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
-- **`progress`**: Also read `references/calibration-engine.md`.
+- **`stories`**: Also read `references/storybank-guide.md`, `references/story-library-contract.md`, `references/differentiation.md`, and `references/evidence-mine.md`.
+- **`questions`**, **`concerns`**: Also read `references/interview-competencies.md` (use company-specific competency overlays when available, fallback to general model).
+- **`pitch`**, **`resume`**, **`linkedin`**, **`map-jd`**, **`check-consistency`**, **`outreach`**, **`thankyou`**, **`apply`**: Also read `references/personal-brand-canon.md`.
+- **`analyze`**, **`practice`**, **`resume`**, **`linkedin`**: Also read `references/evidence-mine.md`.
+- **`progress`**: Also read `references/calibration-engine.md` and `references/story-library-contract.md`.
 - **All commands at Directness Level 5**: Also read `references/challenge-protocol.md`.
 
 ## Mode Detection

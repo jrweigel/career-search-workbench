@@ -26,9 +26,23 @@ Last updated: [date]
 - Career narrative gaps: [transitions that need a story ready]
 - Story seeds: [resume bullets with likely rich stories behind them]
 
+## Competency Model and Positioning
+- Competency model source: [company-specific path / general]
+- Top role competencies: [top 3-5 for current target role]
+- Competency gaps: [frameable / structural by competency]
+- Personal brand canon status: [not started / in progress / solid]
+- Core narrative thesis: [1-2 line positioning throughline]
+- Narrative consistency risk: [clear / moderate drift / high drift]
+- Evidence index freshness: [fresh / stale / not started]
+
+## Operational Control
+- Last status review: [date]
+- Tracker quality status: [clear / warning / critical / not reviewed]
+- Open data quality issues: [short list]
+
 ## Storybank
-| ID | Title | Primary Skill | Secondary Skill | Earned Secret | Strength | Use Count | Last Used |
-|----|-------|---------------|-----------------|---------------|----------|-----------|-----------|
+| ID | Title | Primary Skill | Secondary Skill | Earned Secret | Strength | Evidence Strength | Use Count | Last Used |
+|----|-------|---------------|-----------------|---------------|----------|-------------------|-----------|-----------|
 [rows — compact index. Use Count tracks total times used in real interviews (incremented via debrief). Full column spec in references/storybank-guide.md — the guide adds Impact, Domain, Risk/Stakes, and Notes. Add extra columns as stories are enriched.]
 
 ### Story Details
@@ -145,6 +159,9 @@ Last updated: [date]
 - Differentiation: [Strong / Moderate / Weak]
 - Top fixes pending: [1-3 line items]
 - Positioning gaps: [resume ↔ LinkedIn inconsistencies, if assessed]
+- Content pillars: [3-4 short labels]
+- Calendar status: [not started / week 1 active / week 2 active / completed]
+- Performance baseline: [profile views, search appearances, avg impressions]
 
 ## Resume Optimization
 - Date: [date]
@@ -180,6 +197,22 @@ Last updated: [date]
 - Follow-up status: [pending follow-ups with timing]
 - LinkedIn profile flagged: [yes/no]
 - Key hooks identified: [1-2 reusable positioning hooks]
+- Outreach diagnostics: [sent, replies, response rate, meetings, referrals]
+
+## Outreach Pipeline
+| Company | Contact | Channel | Status | Touch Count | Last Touch | Follow-Up Due | Notes |
+|---------|---------|---------|--------|-------------|------------|---------------|-------|
+[rows — active networking motion only. Archive implicitly by removing inactive rows when the thread is closed or the quiet period begins.]
+
+## Networking Intelligence
+- Date: [date]
+- Target scope: [role family and target companies]
+- Warm-path count: [number]
+- Priority contacts: [top 3 names or roles]
+- Coverage gaps: [companies with no warm path]
+- Follow-up queue status: [on track / stale]
+- Stale follow-ups: [count]
+- Next networking move: [single recommended action]
 
 ## JD Analysis: [Company] — [Role]
 - Date: [date]
@@ -190,12 +223,36 @@ Last updated: [date]
 - Structural gaps: [list]
 - Unverified assumptions: [count of LOW/UNKNOWN items]
 - Batch triage rank: [rank/total, if applicable]
+- Allocation call: [pursue now / pursue later / research more / skip]
 
 [Multiple JD Analysis sections can exist — one per company+role]
+
+## Map-JD Alignment: [Company] — [Role]
+- Date: [date]
+- Depth: [Quick Map / Standard / Deep Map]
+- Resume source: [coaching state / pasted text / uploaded file]
+- Top JD signals: [top 3 in priority order]
+- Coverage summary: [Strong: N, Partial: N, Gap: N]
+- Rewrite queue: [top 3 section-level edits]
+- Unresolved evidence gaps: [count + top gaps]
+- Apply-risk flag: [none / caution / high]
+- Execution status: [not started / edits in progress / edits applied]
+
+[Multiple Map-JD Alignment sections can exist — one per company+role and refresh date]
 
 ### Past JD Analyses (archived — when 10+ analyses exist, non-active decodes compress here)
 | Date | Company | Role | Fit Verdict |
 [rows — brief archive of decoded JDs the candidate didn't pursue]
+
+## Consistency Audit
+- Date: [date]
+- Scope: [all / resume / linkedin / pitch]
+- Overall alignment: [Strong / Moderate / Fragile]
+- Red flags: [count]
+- Yellow flags: [count]
+- Highest-risk contradiction: [one-line description]
+- Priority fix queue status: [not started / in progress / complete]
+- Recommended follow-up command: [resume / linkedin / pitch / map-jd]
 
 ## Presentation Prep: [Topic / Company]
 - Date: [date]

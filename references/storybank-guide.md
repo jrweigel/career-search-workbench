@@ -25,7 +25,9 @@ Create a table with these columns:
 
 ### Full Story Text
 
-The storybank table above is a quick-reference index. The **full STAR text** of each story lives in the Story Details section of `coaching_state.md` — including Situation, Task, Action, Result, Earned Secret detail, deploy use-case, and version history. When adding or improving stories, always write the full text to Story Details, not just the index row. This ensures the coach can reference, improve, and coach on the full story in future sessions without asking the candidate to retell it from scratch.
+The storybank table above is a quick-reference index. The **full STAR text** of each story lives in the Story Details section of `coaching_state.md` — including Situation, Task, Action, Result, Earned Secret detail, deploy use-case, and version history.
+
+For deeper reusable artifacts, also maintain canonical story files in `docs/story-library/` using `docs/story-library/story-template.md`. Use `references/story-library-contract.md` for source hierarchy and sync rules between coaching state and story-library files.
 
 ### Skill Tags (standardized)
 

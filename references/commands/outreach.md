@@ -84,6 +84,9 @@ Pull from coaching_state.md:
 - Interview Loops (company context for targeted outreach)
 - LinkedIn Analysis (profile quality gate)
 - Differentiation data (from Active Coaching Strategy)
+- Networking Intelligence summary (if present, from `network`): warm paths, priority contacts, and follow-up queue
+
+If no networking intelligence exists and the candidate is unsure who to contact first, suggest running `network` before drafting more messages.
 
 ### Step 2: Situation Assessment
 
@@ -99,6 +102,18 @@ Pull from coaching_state.md:
    - Warm intro → email (forwardable)
    - Follow-up → same channel, then add second
 5. **Recipient research**: Guide candidate to find 1-2 specific things to reference — "Before we write the message, find one thing about this person that shows you did your homework. Their recent post, a talk they gave, a project they led. This is the difference between 5% and 25% response rates."
+
+### Step 2.1: Network-First Prioritization
+
+Before writing outreach messages, prioritize targets by relationship strength and relevance.
+
+Use this order:
+
+1. warm path
+2. warm-cold path
+3. cold path
+
+When `network` outputs exist, start with the top 3 priority contacts from that list. Do not begin with cold outreach if clear warm paths are available.
 
 ### Step 3: Message Construction (depth-dependent)
 
@@ -140,6 +155,30 @@ For every outreach message, plan the follow-up sequence:
 - **Follow-up 2** (4-7 days later): Even briefer. Try a different channel if possible. One sentence + the original ask restated simply.
 - **Follow-up 3** (Deep only, recruiter context only): 7+ days. Final touch. Brief, professional, leaves the door open.
 - **When to stop**: 2 follow-ups for networking. 3 for recruiter. "Silence is an answer" — don't chase past the limit. Dignity matters more than persistence.
+
+### Step 5.1: Response-Rate Diagnostics and Candidate-Market-Fit Pivot
+
+Track outreach outcomes in simple buckets:
+
+- sent
+- replied
+- accepted meeting
+- converted to referral or next step
+
+Diagnostic thresholds:
+
+- Response rate below 10% after 10+ targeted messages indicates a likely positioning or targeting issue.
+- Response rate 10-20% is workable and should be improved by tighter specificity.
+- Response rate above 20% indicates the message-market match is healthy.
+
+If below 10%, run a Candidate Market Fit pivot check before writing more templates:
+
+1. Narrow role target and company segment.
+2. Re-anchor hook on one clear differentiator from Positioning Statement.
+3. Tighten proof signal in first two lines.
+4. Re-test with 5-8 messages, then reassess.
+
+If diagnostics suggest targeting mismatch, recommend `network` to rebuild target list and `pitch` to tighten positioning.
 
 ### Step 6: Challenge Protocol (Deep, Level 5 only)
 
@@ -349,6 +388,15 @@ Two parts — the message to your connector, and the forwardable blurb:
 
 ### Follow-Up 2 ([4-7 days later])
 [Full message text]
+
+## Outreach Diagnostics
+- Messages sent in current cycle:
+- Replies:
+- Response rate:
+- Meetings booked:
+- Referrals generated:
+- Interpretation: [healthy / workable / weak]
+- Adjustment: [specific next move]
 
 ## Channel and Timing Notes
 - Best time to send: [day/time guidance]

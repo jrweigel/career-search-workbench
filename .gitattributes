@@ -1,0 +1,17 @@
+# Exclude personal and in-progress artifacts from source archive exports.
+# This protects public ZIP distribution while preserving local workflow files.
+coaching_state.md export-ignore
+next-steps.md export-ignore
+applications/tracker.md export-ignore
+applications/prep-briefs/** export-ignore
+applications/learnings/patterns.md export-ignore
+applications/learnings/interview-notes/*.md export-ignore
+applications/learnings/rejections/*.md export-ignore
+applications/learnings/wins/*.md export-ignore
+docs/ABOUT_ME.md export-ignore
+docs/EXEC_POSITIONING_RESUME.md export-ignore
+docs/*resume*.md export-ignore
+docs/interview-prep-*.md export-ignore
+docs/linkedin-profile-snapshot-*.md export-ignore
+docs/performance-reviews-*.md export-ignore
+docs/PRIVATE_DOCS.md export-ignore
